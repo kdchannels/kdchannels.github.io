@@ -1,257 +1,222 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="YouTube ve Instagram'daki resmî kanallarım. Dokun, takip et.">
+<meta name="description" content="YouTube · Instagram">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://kdkanallari.github.io/">
-<meta property="og:title" content="KD · Resmî Kanallar">
-<meta property="og:description" content="YouTube ve Instagram'daki resmî kanallarım. Dokun, takip et.">
-<meta property="og:image" content="https://kdkanallari.github.io/og.png">
+<meta property="og:url" content="https://kdchannels.github.io/">
+<meta property="og:title" content="KD · Official Channels">
+<meta property="og:description" content="YouTube · Instagram">
+<meta property="og:image" content="https://kdchannels.github.io/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<title>KD · Resmî Kanallar</title>
+<meta name="theme-color" content="#0B1640">
+<title>KD · Official Channels</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&text=KD&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,500&display=swap" rel="stylesheet">
 <style>
 :root{
-  --maroon:#5E1426;
-  --royal:#17307A;
-  --ink:#0A1230;
-  --gold-hi:#FBEBB5;
-  --gold:#D8AE47;
-  --gold-lo:#8C6420;
-  --text:#F3E7C4;
-  --muted:#C9B98C;
-  --row:rgba(10,18,48,.55);
+  --gold-hi:#FFF3C8; --gold:#E8C36A; --gold-lo:#A87A26;
+  --ink:#0A1233; --text:#FFFFFF; --muted:rgba(255,255,255,.72);
+  --glass:rgba(8,12,34,.52);
   box-sizing:border-box;
   padding-top:env(safe-area-inset-top,0px);
   padding-bottom:env(safe-area-inset-bottom,0px);
 }
-@media (prefers-color-scheme: light){
-  :root:not([data-theme="dark"]){ --row:rgba(10,18,48,.55); }
-}
-:root[data-theme="light"],:root[data-theme="dark"]{ --row:rgba(10,18,48,.55); }
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){ --glass:rgba(8,12,34,.52); } }
+:root[data-theme="dark"],:root[data-theme="light"]{ --glass:rgba(8,12,34,.52); }
 *,*::before,*::after{box-sizing:border-box}
 html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px)}
 body{
-  margin:0;min-height:100%;
-  background:
-    radial-gradient(120% 60% at 50% 0%, rgba(216,174,71,.18), transparent 60%),
-    linear-gradient(135deg, var(--maroon) 0%, var(--maroon) 49.8%, var(--royal) 50.2%, var(--royal) 100%);
-  background-color:var(--ink);
+  margin:0;min-height:100%;color:var(--text);
+  font-family:"Lora",Georgia,"Times New Roman",serif;font-size:18px;line-height:1.5;
+  background-color:#0B1640;
+  background-image:
+    linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,0) 45%),
+    linear-gradient(122deg,
+      transparent 0 44%, rgba(255,255,255,.05) 46%, rgba(255,255,255,.22) 49.3%,
+      transparent 49.55%, transparent 50.45%,
+      rgba(255,255,255,.22) 50.7%, rgba(255,255,255,.05) 54%, transparent 56% 100%),
+    linear-gradient(122deg,
+      #761530 0%, #4E0B1F 30%, #26040F 49.7%,
+      #F6D98A 49.75%, #F6D98A 50.25%,
+      #3A6BDA 50.3%, #193A96 72%, #081640 100%);
   background-attachment:fixed;
-  color:var(--text);
-  font-family:"Cormorant Garamond", Georgia, "Times New Roman", serif;
-  font-size:19px; line-height:1.55;
-  display:flex; justify-content:center;
+  display:flex;justify-content:center;
 }
-body::before{
-  content:"";position:fixed;inset:0;pointer-events:none;
-  background:linear-gradient(180deg, rgba(10,18,48,.35), rgba(10,18,48,.75));
-}
-main{
-  position:relative;width:100%;max-width:440px;
-  padding:48px 22px 40px;
-  display:flex;flex-direction:column;align-items:center;text-align:center;
-}
+main{position:relative;width:100%;max-width:450px;padding:40px 18px 36px}
 .frame{
-  position:relative;width:100%;
-  padding:40px 22px 28px;
-  border:1px solid rgba(216,174,71,.55);
-  outline:1px solid rgba(216,174,71,.22);
-  outline-offset:5px;
-  border-radius:4px;
-  background:linear-gradient(180deg, rgba(10,18,48,.25), rgba(10,18,48,.55));
+  position:relative;padding:40px 22px 30px;text-align:center;
+  border:6px solid;border-image:linear-gradient(135deg,#FFF2C4,#C99A3A 35%,#F1D27E 65%,#7E5A1C) 1;
+  background:linear-gradient(180deg,rgba(8,12,34,.10),rgba(8,12,34,.28));
+  -webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);
+  box-shadow:0 24px 60px rgba(0,0,0,.45);
 }
-.medal{width:156px;height:156px;margin:-2px auto 18px;display:block;filter:drop-shadow(0 10px 24px rgba(0,0,0,.45))}
-.sheen{animation:sweep 2.4s .4s ease-out 1 both}
-@keyframes sweep{from{transform:translateX(-160px)}to{transform:translateX(160px)}}
-@media (prefers-reduced-motion: reduce){.sheen{animation:none;opacity:0}}
-h1{
-  font-family:"Cinzel", "Trajan Pro", Georgia, serif;font-weight:700;
-  font-size:46px;letter-spacing:.28em;padding-left:.28em;line-height:1.1;margin:0 0 6px;
-  background:linear-gradient(180deg,var(--gold-hi) 0%,var(--gold) 55%,var(--gold-lo) 100%);
+.medal{width:172px;height:172px;display:block;margin:0 auto 20px;
+  filter:drop-shadow(0 16px 30px rgba(0,0,0,.55)) drop-shadow(0 0 22px rgba(246,217,138,.28))}
+h1{margin:0;font-style:italic;font-weight:500;font-size:46px;line-height:1.04;letter-spacing:0;
+  background:linear-gradient(180deg,var(--gold-hi),var(--gold) 55%,var(--gold-lo));
   -webkit-background-clip:text;background-clip:text;color:transparent;
-}
-.lede{margin:0 auto 22px;font-family:"Cinzel",Georgia,serif;font-weight:700;font-size:17px;letter-spacing:.24em;text-transform:uppercase;padding-left:.24em;background:linear-gradient(180deg,var(--gold-hi),var(--gold) 60%,var(--gold-lo));-webkit-background-clip:text;background-clip:text;color:transparent}
-.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
-.rule{display:flex;align-items:center;gap:10px;margin:0 0 22px;color:var(--gold)}
-.rule::before,.rule::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
-.rule svg{width:10px;height:10px}
-ul{list-style:none;margin:0;padding:0;width:100%;display:grid;gap:12px}
-a.ch{
-  display:grid;grid-template-columns:44px 1fr auto;align-items:center;gap:14px;
-  padding:12px 14px 12px 12px;text-decoration:none;color:var(--text);
-  background:var(--row);
-  border:1px solid rgba(216,174,71,.35);border-radius:4px;
-  text-align:left;
-  transition:border-color .2s, background .2s, transform .15s;
-}
-a.ch:hover{border-color:var(--gold);background:rgba(10,18,48,.75)}
+  filter:drop-shadow(0 3px 8px rgba(0,0,0,.45))}
+.rule{display:flex;align-items:center;justify-content:center;gap:12px;margin:18px 0 14px}
+.rule span{height:1.5px;width:88px}
+.rule span:first-child{background:linear-gradient(90deg,transparent,#F6D98A)}
+.rule span:last-child{background:linear-gradient(90deg,#F6D98A,transparent)}
+.rule i{width:8px;height:8px;background:var(--gold-hi);transform:rotate(45deg)}
+.sub{margin:0 0 28px;font-size:15px;letter-spacing:.16em;padding-left:.16em;text-transform:uppercase;color:#fff;
+  text-shadow:0 2px 8px rgba(0,0,0,.5)}
+ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+a.ch{display:grid;grid-template-columns:46px 1fr auto;align-items:center;gap:12px;
+  padding:12px 12px 12px 12px;text-decoration:none;color:var(--text);text-align:left;
+  background:var(--glass);border:1px solid rgba(232,195,106,.55);border-radius:6px;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.08);
+  transition:border-color .2s,background .2s,transform .15s}
+a.ch:hover{border-color:var(--gold-hi);background:rgba(8,12,34,.7)}
 a.ch:active{transform:scale(.985)}
 a.ch:focus-visible{outline:2px solid var(--gold-hi);outline-offset:3px}
-.ico{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;
-  background:radial-gradient(circle at 35% 30%,var(--gold-hi),var(--gold) 45%,var(--gold-lo));
-  box-shadow:inset 0 0 0 1px rgba(255,255,255,.25)}
+.ico{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;
+  background:radial-gradient(circle at 35% 30%,#FFF3C8,#E8C36A 45%,#A87A26);
+  box-shadow:0 0 0 2px rgba(255,243,200,.25),0 4px 10px rgba(0,0,0,.35)}
 .ico svg{width:22px;height:22px;fill:var(--ink)}
 .who{min-width:0}
-.handle{display:block;font-family:"Cinzel",Georgia,serif;font-weight:500;font-size:15px;letter-spacing:.02em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.plat{display:block;color:var(--muted);font-size:16px;line-height:1.3}
-.cta{
-  font-family:"Cinzel",Georgia,serif;font-weight:700;font-size:12.5px;letter-spacing:.04em;
-  padding:8px 11px;border-radius:3px;white-space:nowrap;color:var(--ink);
-  background:linear-gradient(180deg,var(--gold-hi),var(--gold) 60%,#B8872E);
-}
-.note{margin:24px 0 0;color:var(--muted);font-size:18px;line-height:1.5}
-footer{margin-top:26px;font-family:"Cinzel",Georgia,serif;font-size:12px;letter-spacing:.2em;color:rgba(216,174,71,.7)}
-@media (max-width:360px){ .cta{font-size:11px;padding:7px 8px} a.ch{gap:10px} }
-
-.share{margin-top:24px;width:100%}
-.share summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:12px;width:100%;min-height:58px;
-  font-family:"Cinzel",Georgia,serif;font-weight:700;font-size:16px;letter-spacing:.1em;
-  color:var(--gold-hi);padding:14px 20px;border:1px solid var(--gold);border-radius:4px;
-  background:rgba(10,18,48,.4);transition:background .2s}
+.handle{display:block;font-weight:600;font-size:17px;line-height:1.25;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.plat{display:block;font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin-top:3px}
+.cta{font-weight:600;font-size:14px;padding:9px 11px;border-radius:4px;white-space:nowrap;color:var(--ink);
+  background:linear-gradient(180deg,#FFF3C8,#E8C36A 55%,#B8872E);box-shadow:0 3px 8px rgba(0,0,0,.3)}
+.note{margin:22px 4px 0;font-style:italic;font-size:16px;color:var(--muted)}
+.share{margin-top:22px}
+.share summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:12px;
+  min-height:56px;padding:14px 18px;border:1px solid var(--gold);border-radius:6px;background:var(--glass);
+  font-weight:600;font-size:17px;color:var(--gold-hi);letter-spacing:.02em;transition:background .2s}
 .share summary::-webkit-details-marker{display:none}
-.share summary:hover{background:rgba(216,174,71,.12)}
+.share summary:hover{background:rgba(232,195,106,.12)}
 .share summary:focus-visible{outline:2px solid var(--gold-hi);outline-offset:3px}
 .share summary svg{width:20px;height:20px;fill:currentColor}
-.share[open] summary{border-color:var(--gold-hi)}
-.panel{margin-top:16px;padding:20px 16px 18px;border:1px solid rgba(216,174,71,.45);border-radius:4px;
-  background:linear-gradient(180deg,rgba(10,18,48,.55),rgba(10,18,48,.8));animation:rise .35s ease-out}
+.panel{margin-top:14px;padding:22px 16px 18px;border:1px solid rgba(232,195,106,.45);border-radius:6px;background:var(--glass);animation:rise .35s ease-out}
 @keyframes rise{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion: reduce){.panel{animation:none}}
-.qrwrap{display:inline-block;padding:9px;border-radius:12px;
-  background:linear-gradient(135deg,#FBEBB5,#C99A3A 40%,#F1D27E 65%,#8C6420);
-  box-shadow:0 12px 28px rgba(0,0,0,.45)}
-.qr{display:block;width:min(240px,64vw);height:auto}
-.hint{margin:14px 0 6px;color:var(--muted);font-size:19px;font-style:italic}
-.url{font-family:"Cinzel",Georgia,serif;font-size:15px;letter-spacing:.04em;color:var(--gold-hi);margin:0 0 14px;word-break:break-all}
+.qrwrap{display:inline-block;padding:9px;border-radius:16px;
+  background:linear-gradient(135deg,#FFF2C4,#C99A3A 35%,#F1D27E 65%,#7E5A1C);box-shadow:0 12px 28px rgba(0,0,0,.45)}
+.qr{display:block;width:min(240px,64vw);height:auto;border-radius:10px}
+.hint{margin:14px 0 4px;font-style:italic;font-size:18px;color:var(--muted)}
+.url{margin:0 0 14px;font-size:15px;letter-spacing:.04em;color:var(--gold-hi);word-break:break-all}
 .btns{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.btn{display:flex;align-items:center;justify-content:center;gap:9px;min-height:52px;padding:12px 8px;border-radius:4px;
-  font-family:"Cinzel",Georgia,serif;font-weight:700;font-size:14px;letter-spacing:.04em;text-decoration:none;cursor:pointer;
-  border:1px solid var(--gold);transition:filter .2s, background .2s}
+.btn{display:flex;align-items:center;justify-content:center;gap:9px;min-height:50px;padding:10px 8px;border-radius:5px;
+  font-family:inherit;font-weight:600;font-size:15px;text-decoration:none;cursor:pointer;border:1px solid var(--gold);transition:filter .2s}
 .btn span{white-space:nowrap}
 .btn svg{width:19px;height:19px;fill:currentColor;flex:none}
-.btn.gold{color:var(--ink);background:linear-gradient(180deg,var(--gold-hi),var(--gold) 60%,#B8872E);border-color:transparent}
+.btn.gold{color:var(--ink);background:linear-gradient(180deg,#FFF3C8,#E8C36A 55%,#B8872E);border-color:transparent}
 .btn.line{color:var(--gold-hi);background:transparent}
 .btn:hover{filter:brightness(1.08)}
 .btn:focus-visible{outline:2px solid var(--gold-hi);outline-offset:3px}
-@media (max-width:340px){.btns{grid-template-columns:1fr}}
+footer{margin-top:22px;text-align:center;font-size:12px;letter-spacing:.3em;padding-left:.3em;color:rgba(246,217,138,.7)}
+@media (max-width:360px){.cta{font-size:13px;padding:8px 10px} a.ch{gap:10px} h1{font-size:40px} .btns{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <main>
   <div class="frame">
-    <svg class="medal" viewBox="0 0 200 200" role="img" aria-label="KD logosu">
+    <svg class="medal" viewBox="0 0 200 200" role="img" aria-label="KD logo"><defs><linearGradient id="Hbo" x1=".3" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#8E1E3B"/><stop offset=".55" stop-color="#5E0F26"/><stop offset="1" stop-color="#26040F"/></linearGradient><linearGradient id="Hmv" x1="0" y1="0" x2=".5" y2="1"><stop offset="0" stop-color="#3A6BDA"/><stop offset=".55" stop-color="#193A96"/><stop offset="1" stop-color="#081640"/></linearGradient><linearGradient id="Hwl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".45" stop-color="#fff" stop-opacity=".95"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient><filter id="Hb4"><feGaussianBlur stdDeviation="4"/></filter><filter id="Hb1"><feGaussianBlur stdDeviation="1"/></filter><linearGradient id="Hsh" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".16"/><stop offset=".55" stop-color="#fff" stop-opacity="0"/></linearGradient></defs>
       <defs>
-        <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+        <linearGradient id="Hg" x1="0" y1="0" x2="0" y2="1">
           <stop offset="0" stop-color="#FBEBB5"/><stop offset=".45" stop-color="#E2BD5C"/>
           <stop offset=".7" stop-color="#B48430"/><stop offset="1" stop-color="#F3D98A"/>
         </linearGradient>
-        <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+        <linearGradient id="Hring" x1="0" y1="0" x2="1" y2="1">
           <stop offset="0" stop-color="#FFF2C4"/><stop offset=".35" stop-color="#C99A3A"/>
           <stop offset=".65" stop-color="#F1D27E"/><stop offset="1" stop-color="#7E5A1C"/>
         </linearGradient>
-        <clipPath id="c"><circle cx="100" cy="100" r="80"/></clipPath>
-        <linearGradient id="sh" x1="0" y1="0" x2="1" y2="0">
+        <clipPath id="Hc"><circle cx="100" cy="100" r="80"/></clipPath>
+        <linearGradient id="Hsh" x1="0" y1="0" x2="1" y2="0">
           <stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".35"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
         </linearGradient>
       </defs>
-      <circle cx="100" cy="100" r="96" fill="url(#ring)"/>
+      <circle cx="100" cy="100" r="96" fill="url(#Hring)"/>
       <circle cx="100" cy="100" r="86" fill="#2a1a08"/>
-      <circle cx="100" cy="100" r="84" fill="url(#ring)"/>
-      <g clip-path="url(#c)">
-        <rect width="200" height="200" fill="#1B3688"/>
-        <polygon points="0,0 200,0 0,200" fill="#6A1830"/>
-        <line x1="0" y1="200" x2="200" y2="0" stroke="#E2BD5C" stroke-width="1.2" opacity=".6"/>
-        <rect class="sheen" x="40" y="0" width="50" height="200" fill="url(#sh)" transform="skewX(-18)"/>
+      <circle cx="100" cy="100" r="84" fill="url(#Hring)"/>
+      <g clip-path="url(#Hc)">
+        <rect width="200" height="200" fill="url(#Hbo)"/>
+        <polygon points="0,0 163.5,0 36.5,200 0,200" fill="url(#Hmv)"/>
+        <line x1="36.5" y1="200" x2="163.5" y2="0" stroke="url(#Hwl)" stroke-width="16" opacity=".45" filter="url(#Hb4)"/><line x1="28.5" y1="200" x2="155.5" y2="0" stroke="url(#Hwl)" stroke-width=".8" opacity=".55"/><line x1="44.5" y1="200" x2="171.5" y2="0" stroke="url(#Hwl)" stroke-width=".8" opacity=".55"/><line x1="18.5" y1="200" x2="145.5" y2="0" stroke="url(#Hwl)" stroke-width=".6" opacity=".3" filter="url(#Hb1)"/><line x1="54.5" y1="200" x2="181.5" y2="0" stroke="url(#Hwl)" stroke-width=".6" opacity=".3" filter="url(#Hb1)"/><line x1="36.5" y1="200" x2="163.5" y2="0" stroke="#F6D98A" stroke-width="1.3" opacity=".95"/><rect width="200" height="200" fill="url(#Hsh)"/>
+        
       </g>
-      <text x="100" y="118" text-anchor="middle" font-family="Cinzel, Georgia, serif" font-weight="700" font-size="62" fill="url(#g)" stroke="#6B4A14" stroke-width=".8" letter-spacing="-3">KD</text>
+      <text x="100" y="118" text-anchor="middle" style="font-family:'Noto Sans JP','Noto Sans CJK JP',sans-serif;font-weight:500;font-size:60px;letter-spacing:-1px" fill="url(#Hg)" stroke="#6B4A14" stroke-width=".5">KD</text>
       <line x1="72" y1="134" x2="93" y2="134" stroke="#E2BD5C" stroke-width="1.4"/>
       <line x1="107" y1="134" x2="128" y2="134" stroke="#E2BD5C" stroke-width="1.4"/>
       <rect x="97" y="131" width="6" height="6" transform="rotate(45 100 134)" fill="#FBEBB5"/>
     </svg>
-
-    <h1 class="sr">KD · Resmî Kanallar</h1>
-    <p class="lede">Resmî Kanallar</p>
-
-    <div class="rule" aria-hidden="true"><svg viewBox="0 0 10 10"><rect x="2" y="2" width="6" height="6" transform="rotate(45 5 5)" fill="currentColor"/></svg></div>
-
+    <h1>Official<br>Channels</h1>
+    <div class="rule" aria-hidden="true"><span></span><i></i><span></span></div>
+    <p class="sub">YouTube · Instagram</p>
     <ul>
       <li><a class="ch" href="https://youtube.com/@cinosboy61?sub_confirmation=1" target="_blank" rel="noopener">
-        <span class="ico"><svg viewBox="0 0 24 24"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.7 15.1V8.9l5.8 3.1-5.8 3.1z"/></svg></span>
-        <span class="who"><span class="handle" lang="en">@cinosboy61</span><span class="plat">YouTube</span></span>
-        <span class="cta">Abone ol</span></a></li>
-
+        <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.7 15.1V8.9l5.8 3.1-5.8 3.1z"/></svg></span>
+        <span class="who"><span class="handle">@cinosboy61</span><span class="plat">YouTube</span></span>
+        <span class="cta">Subscribe</span></a></li>
       <li><a class="ch" href="https://youtube.com/@kdrdmrkr?sub_confirmation=1" target="_blank" rel="noopener">
-        <span class="ico"><svg viewBox="0 0 24 24"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.7 15.1V8.9l5.8 3.1-5.8 3.1z"/></svg></span>
-        <span class="who"><span class="handle" lang="en">@kdrdmrkr</span><span class="plat">YouTube</span></span>
-        <span class="cta">Abone ol</span></a></li>
-
+        <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.7 15.1V8.9l5.8 3.1-5.8 3.1z"/></svg></span>
+        <span class="who"><span class="handle">@kdrdmrkr</span><span class="plat">YouTube</span></span>
+        <span class="cta">Subscribe</span></a></li>
       <li><a class="ch" href="https://www.instagram.com/kdraien" target="_blank" rel="noopener">
-        <span class="ico"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8C2.4 3.9 3.9 2.4 7.2 2.3c1.2-.1 1.6-.1 4.8-.1zM12 0C8.7 0 8.3 0 7.1.1 2.7.3.3 2.7.1 7.1 0 8.3 0 8.7 0 12s0 3.7.1 4.9c.2 4.4 2.6 6.8 7 7 1.2.1 1.6.1 4.9.1s3.7 0 4.9-.1c4.4-.2 6.8-2.6 7-7 .1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9c-.2-4.4-2.6-6.8-7-7C15.7 0 15.3 0 12 0zm0 5.8a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.8a1.4 1.4 0 1 0 0 2.9 1.4 1.4 0 0 0 0-2.9z"/></svg></span>
-        <span class="who"><span class="handle" lang="en">@kdraien</span><span class="plat">Instagram · Unknown Facts</span></span>
-        <span class="cta">Takip et</span></a></li>
-
+        <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8C2.4 3.9 3.9 2.4 7.2 2.3c1.2-.1 1.6-.1 4.8-.1zM12 0C8.7 0 8.3 0 7.1.1 2.7.3.3 2.7.1 7.1 0 8.3 0 8.7 0 12s0 3.7.1 4.9c.2 4.4 2.6 6.8 7 7 1.2.1 1.6.1 4.9.1s3.7 0 4.9-.1c4.4-.2 6.8-2.6 7-7 .1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9c-.2-4.4-2.6-6.8-7-7C15.7 0 15.3 0 12 0zm0 5.8a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.8a1.4 1.4 0 1 0 0 2.9 1.4 1.4 0 0 0 0-2.9z"/></svg></span>
+        <span class="who"><span class="handle">@kdraien</span><span class="plat">Instagram · Unknown Facts</span></span>
+        <span class="cta">Follow</span></a></li>
       <li><a class="ch" href="https://www.instagram.com/kdrdmrkrai" target="_blank" rel="noopener">
-        <span class="ico"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8C2.4 3.9 3.9 2.4 7.2 2.3c1.2-.1 1.6-.1 4.8-.1zM12 0C8.7 0 8.3 0 7.1.1 2.7.3.3 2.7.1 7.1 0 8.3 0 8.7 0 12s0 3.7.1 4.9c.2 4.4 2.6 6.8 7 7 1.2.1 1.6.1 4.9.1s3.7 0 4.9-.1c4.4-.2 6.8-2.6 7-7 .1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9c-.2-4.4-2.6-6.8-7-7C15.7 0 15.3 0 12 0zm0 5.8a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.8a1.4 1.4 0 1 0 0 2.9 1.4 1.4 0 0 0 0-2.9z"/></svg></span>
-        <span class="who"><span class="handle" lang="en">@kdrdmrkrai</span><span class="plat">Instagram</span></span>
-        <span class="cta">Takip et</span></a></li>
+        <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8C2.4 3.9 3.9 2.4 7.2 2.3c1.2-.1 1.6-.1 4.8-.1zM12 0C8.7 0 8.3 0 7.1.1 2.7.3.3 2.7.1 7.1 0 8.3 0 8.7 0 12s0 3.7.1 4.9c.2 4.4 2.6 6.8 7 7 1.2.1 1.6.1 4.9.1s3.7 0 4.9-.1c4.4-.2 6.8-2.6 7-7 .1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9c-.2-4.4-2.6-6.8-7-7C15.7 0 15.3 0 12 0zm0 5.8a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.8a1.4 1.4 0 1 0 0 2.9 1.4 1.4 0 0 0 0-2.9z"/></svg></span>
+        <span class="who"><span class="handle">@kdrdmrkrai</span><span class="plat">Instagram</span></span>
+        <span class="cta">Follow</span></a></li>
     </ul>
-
-    <p class="note">YouTube'da açılan pencerede “Abone ol”a bir kez daha dokunman yeterli.</p>
-
+    <p class="note">On YouTube, just tap “Subscribe” once more in the window that opens.</p>
     <details class="share">
-      <summary><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h8v8H3V3zm2 2v4h4V5H5zm8-2h8v8h-8V3zm2 2v4h4V5h-4zM3 13h8v8H3v-8zm2 2v4h4v-4H5zm11-2h2v2h-2v-2zm-3 0h2v3h-2v-3zm5 3h3v2h-3v-2zm-5 2h3v3h-3v-3zm5 1h3v2h-1v1h-2v-3z"/></svg>Bu sayfayı paylaş</summary>
+      <summary><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h8v8H3V3zm2 2v4h4V5H5zm8-2h8v8h-8V3zm2 2v4h4V5h-4zM3 13h8v8H3v-8zm2 2v4h4v-4H5zm11-2h2v2h-2v-2zm-3 0h2v3h-2v-3zm5 3h3v2h-3v-2zm-5 2h3v3h-3v-3zm5 1h3v2h-1v1h-2v-3z"/></svg>Share this page</summary>
       <div class="panel">
-        <div class="qrwrap"><svg viewBox="-4 -4 45 45" class="qr" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="QR kod: https://kdkanallari.github.io"><defs><linearGradient id="sqeye" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#B8872E"/><stop offset=".5" stop-color="#8C6420"/><stop offset="1" stop-color="#6B4A14"/></linearGradient></defs><rect x="-4" y="-4" width="45" height="45" rx="3" fill="#FFF8E4"/><g fill="#0E1A44"><circle cx="9.5" cy="0.5" r=".46"/><circle cx="10.5" cy="0.5" r=".46"/><circle cx="13.5" cy="0.5" r=".46"/><circle cx="14.5" cy="0.5" r=".46"/><circle cx="16.5" cy="0.5" r=".46"/><circle cx="17.5" cy="0.5" r=".46"/><circle cx="18.5" cy="0.5" r=".46"/><circle cx="20.5" cy="0.5" r=".46"/><circle cx="23.5" cy="0.5" r=".46"/><circle cx="24.5" cy="0.5" r=".46"/><circle cx="26.5" cy="0.5" r=".46"/><circle cx="8.5" cy="1.5" r=".46"/><circle cx="12.5" cy="1.5" r=".46"/><circle cx="13.5" cy="1.5" r=".46"/><circle cx="17.5" cy="1.5" r=".46"/><circle cx="18.5" cy="1.5" r=".46"/><circle cx="22.5" cy="1.5" r=".46"/><circle cx="23.5" cy="1.5" r=".46"/><circle cx="24.5" cy="1.5" r=".46"/><circle cx="25.5" cy="1.5" r=".46"/><circle cx="26.5" cy="1.5" r=".46"/><circle cx="8.5" cy="2.5" r=".46"/><circle cx="10.5" cy="2.5" r=".46"/><circle cx="15.5" cy="2.5" r=".46"/><circle cx="16.5" cy="2.5" r=".46"/><circle cx="17.5" cy="2.5" r=".46"/><circle cx="18.5" cy="2.5" r=".46"/><circle cx="19.5" cy="2.5" r=".46"/><circle cx="23.5" cy="2.5" r=".46"/><circle cx="25.5" cy="2.5" r=".46"/><circle cx="28.5" cy="2.5" r=".46"/><circle cx="8.5" cy="3.5" r=".46"/><circle cx="10.5" cy="3.5" r=".46"/><circle cx="12.5" cy="3.5" r=".46"/><circle cx="13.5" cy="3.5" r=".46"/><circle cx="14.5" cy="3.5" r=".46"/><circle cx="15.5" cy="3.5" r=".46"/><circle cx="17.5" cy="3.5" r=".46"/><circle cx="18.5" cy="3.5" r=".46"/><circle cx="21.5" cy="3.5" r=".46"/><circle cx="23.5" cy="3.5" r=".46"/><circle cx="24.5" cy="3.5" r=".46"/><circle cx="8.5" cy="4.5" r=".46"/><circle cx="9.5" cy="4.5" r=".46"/><circle cx="11.5" cy="4.5" r=".46"/><circle cx="15.5" cy="4.5" r=".46"/><circle cx="16.5" cy="4.5" r=".46"/><circle cx="18.5" cy="4.5" r=".46"/><circle cx="19.5" cy="4.5" r=".46"/><circle cx="20.5" cy="4.5" r=".46"/><circle cx="21.5" cy="4.5" r=".46"/><circle cx="22.5" cy="4.5" r=".46"/><circle cx="25.5" cy="4.5" r=".46"/><circle cx="26.5" cy="4.5" r=".46"/><circle cx="28.5" cy="4.5" r=".46"/><circle cx="8.5" cy="5.5" r=".46"/><circle cx="9.5" cy="5.5" r=".46"/><circle cx="11.5" cy="5.5" r=".46"/><circle cx="12.5" cy="5.5" r=".46"/><circle cx="13.5" cy="5.5" r=".46"/><circle cx="16.5" cy="5.5" r=".46"/><circle cx="17.5" cy="5.5" r=".46"/><circle cx="19.5" cy="5.5" r=".46"/><circle cx="21.5" cy="5.5" r=".46"/><circle cx="22.5" cy="5.5" r=".46"/><circle cx="23.5" cy="5.5" r=".46"/><circle cx="28.5" cy="5.5" r=".46"/><circle cx="8.5" cy="6.5" r=".46"/><circle cx="10.5" cy="6.5" r=".46"/><circle cx="12.5" cy="6.5" r=".46"/><circle cx="14.5" cy="6.5" r=".46"/><circle cx="16.5" cy="6.5" r=".46"/><circle cx="18.5" cy="6.5" r=".46"/><circle cx="20.5" cy="6.5" r=".46"/><circle cx="22.5" cy="6.5" r=".46"/><circle cx="24.5" cy="6.5" r=".46"/><circle cx="26.5" cy="6.5" r=".46"/><circle cx="28.5" cy="6.5" r=".46"/><circle cx="10.5" cy="7.5" r=".46"/><circle cx="11.5" cy="7.5" r=".46"/><circle cx="12.5" cy="7.5" r=".46"/><circle cx="13.5" cy="7.5" r=".46"/><circle cx="16.5" cy="7.5" r=".46"/><circle cx="17.5" cy="7.5" r=".46"/><circle cx="19.5" cy="7.5" r=".46"/><circle cx="20.5" cy="7.5" r=".46"/><circle cx="22.5" cy="7.5" r=".46"/><circle cx="23.5" cy="7.5" r=".46"/><circle cx="26.5" cy="7.5" r=".46"/><circle cx="27.5" cy="7.5" r=".46"/><circle cx="28.5" cy="7.5" r=".46"/><circle cx="2.5" cy="8.5" r=".46"/><circle cx="5.5" cy="8.5" r=".46"/><circle cx="6.5" cy="8.5" r=".46"/><circle cx="7.5" cy="8.5" r=".46"/><circle cx="8.5" cy="8.5" r=".46"/><circle cx="9.5" cy="8.5" r=".46"/><circle cx="10.5" cy="8.5" r=".46"/><circle cx="11.5" cy="8.5" r=".46"/><circle cx="12.5" cy="8.5" r=".46"/><circle cx="15.5" cy="8.5" r=".46"/><circle cx="16.5" cy="8.5" r=".46"/><circle cx="17.5" cy="8.5" r=".46"/><circle cx="18.5" cy="8.5" r=".46"/><circle cx="19.5" cy="8.5" r=".46"/><circle cx="22.5" cy="8.5" r=".46"/><circle cx="23.5" cy="8.5" r=".46"/><circle cx="25.5" cy="8.5" r=".46"/><circle cx="26.5" cy="8.5" r=".46"/><circle cx="28.5" cy="8.5" r=".46"/><circle cx="29.5" cy="8.5" r=".46"/><circle cx="31.5" cy="8.5" r=".46"/><circle cx="32.5" cy="8.5" r=".46"/><circle cx="33.5" cy="8.5" r=".46"/><circle cx="34.5" cy="8.5" r=".46"/><circle cx="35.5" cy="8.5" r=".46"/><circle cx="0.5" cy="9.5" r=".46"/><circle cx="1.5" cy="9.5" r=".46"/><circle cx="2.5" cy="9.5" r=".46"/><circle cx="4.5" cy="9.5" r=".46"/><circle cx="7.5" cy="9.5" r=".46"/><circle cx="8.5" cy="9.5" r=".46"/><circle cx="10.5" cy="9.5" r=".46"/><circle cx="12.5" cy="9.5" r=".46"/><circle cx="13.5" cy="9.5" r=".46"/><circle cx="17.5" cy="9.5" r=".46"/><circle cx="20.5" cy="9.5" r=".46"/><circle cx="22.5" cy="9.5" r=".46"/><circle cx="23.5" cy="9.5" r=".46"/><circle cx="24.5" cy="9.5" r=".46"/><circle cx="25.5" cy="9.5" r=".46"/><circle cx="26.5" cy="9.5" r=".46"/><circle cx="28.5" cy="9.5" r=".46"/><circle cx="29.5" cy="9.5" r=".46"/><circle cx="33.5" cy="9.5" r=".46"/><circle cx="34.5" cy="9.5" r=".46"/><circle cx="35.5" cy="9.5" r=".46"/><circle cx="36.5" cy="9.5" r=".46"/><circle cx="4.5" cy="10.5" r=".46"/><circle cx="5.5" cy="10.5" r=".46"/><circle cx="6.5" cy="10.5" r=".46"/><circle cx="7.5" cy="10.5" r=".46"/><circle cx="8.5" cy="10.5" r=".46"/><circle cx="9.5" cy="10.5" r=".46"/><circle cx="10.5" cy="10.5" r=".46"/><circle cx="13.5" cy="10.5" r=".46"/><circle cx="14.5" cy="10.5" r=".46"/><circle cx="17.5" cy="10.5" r=".46"/><circle cx="19.5" cy="10.5" r=".46"/><circle cx="22.5" cy="10.5" r=".46"/><circle cx="23.5" cy="10.5" r=".46"/><circle cx="28.5" cy="10.5" r=".46"/><circle cx="29.5" cy="10.5" r=".46"/><circle cx="30.5" cy="10.5" r=".46"/><circle cx="32.5" cy="10.5" r=".46"/><circle cx="33.5" cy="10.5" r=".46"/><circle cx="36.5" cy="10.5" r=".46"/><circle cx="7.5" cy="11.5" r=".46"/><circle cx="10.5" cy="11.5" r=".46"/><circle cx="11.5" cy="11.5" r=".46"/><circle cx="12.5" cy="11.5" r=".46"/><circle cx="13.5" cy="11.5" r=".46"/><circle cx="16.5" cy="11.5" r=".46"/><circle cx="18.5" cy="11.5" r=".46"/><circle cx="19.5" cy="11.5" r=".46"/><circle cx="20.5" cy="11.5" r=".46"/><circle cx="21.5" cy="11.5" r=".46"/><circle cx="26.5" cy="11.5" r=".46"/><circle cx="27.5" cy="11.5" r=".46"/><circle cx="28.5" cy="11.5" r=".46"/><circle cx="33.5" cy="11.5" r=".46"/><circle cx="34.5" cy="11.5" r=".46"/><circle cx="35.5" cy="11.5" r=".46"/><circle cx="0.5" cy="12.5" r=".46"/><circle cx="1.5" cy="12.5" r=".46"/><circle cx="2.5" cy="12.5" r=".46"/><circle cx="3.5" cy="12.5" r=".46"/><circle cx="6.5" cy="12.5" r=".46"/><circle cx="9.5" cy="12.5" r=".46"/><circle cx="10.5" cy="12.5" r=".46"/><circle cx="11.5" cy="12.5" r=".46"/><circle cx="12.5" cy="12.5" r=".46"/><circle cx="14.5" cy="12.5" r=".46"/><circle cx="15.5" cy="12.5" r=".46"/><circle cx="18.5" cy="12.5" r=".46"/><circle cx="19.5" cy="12.5" r=".46"/><circle cx="20.5" cy="12.5" r=".46"/><circle cx="21.5" cy="12.5" r=".46"/><circle cx="22.5" cy="12.5" r=".46"/><circle cx="23.5" cy="12.5" r=".46"/><circle cx="28.5" cy="12.5" r=".46"/><circle cx="30.5" cy="12.5" r=".46"/><circle cx="31.5" cy="12.5" r=".46"/><circle cx="33.5" cy="12.5" r=".46"/><circle cx="34.5" cy="12.5" r=".46"/><circle cx="35.5" cy="12.5" r=".46"/><circle cx="0.5" cy="13.5" r=".46"/><circle cx="1.5" cy="13.5" r=".46"/><circle cx="2.5" cy="13.5" r=".46"/><circle cx="3.5" cy="13.5" r=".46"/><circle cx="4.5" cy="13.5" r=".46"/><circle cx="9.5" cy="13.5" r=".46"/><circle cx="10.5" cy="13.5" r=".46"/><circle cx="11.5" cy="13.5" r=".46"/><circle cx="12.5" cy="13.5" r=".46"/><circle cx="13.5" cy="13.5" r=".46"/><circle cx="15.5" cy="13.5" r=".46"/><circle cx="21.5" cy="13.5" r=".46"/><circle cx="25.5" cy="13.5" r=".46"/><circle cx="27.5" cy="13.5" r=".46"/><circle cx="28.5" cy="13.5" r=".46"/><circle cx="29.5" cy="13.5" r=".46"/><circle cx="30.5" cy="13.5" r=".46"/><circle cx="31.5" cy="13.5" r=".46"/><circle cx="34.5" cy="13.5" r=".46"/><circle cx="36.5" cy="13.5" r=".46"/><circle cx="0.5" cy="14.5" r=".46"/><circle cx="4.5" cy="14.5" r=".46"/><circle cx="6.5" cy="14.5" r=".46"/><circle cx="8.5" cy="14.5" r=".46"/><circle cx="9.5" cy="14.5" r=".46"/><circle cx="10.5" cy="14.5" r=".46"/><circle cx="11.5" cy="14.5" r=".46"/><circle cx="13.5" cy="14.5" r=".46"/><circle cx="14.5" cy="14.5" r=".46"/><circle cx="22.5" cy="14.5" r=".46"/><circle cx="23.5" cy="14.5" r=".46"/><circle cx="24.5" cy="14.5" r=".46"/><circle cx="25.5" cy="14.5" r=".46"/><circle cx="26.5" cy="14.5" r=".46"/><circle cx="27.5" cy="14.5" r=".46"/><circle cx="32.5" cy="14.5" r=".46"/><circle cx="33.5" cy="14.5" r=".46"/><circle cx="34.5" cy="14.5" r=".46"/><circle cx="36.5" cy="14.5" r=".46"/><circle cx="2.5" cy="15.5" r=".46"/><circle cx="3.5" cy="15.5" r=".46"/><circle cx="5.5" cy="15.5" r=".46"/><circle cx="7.5" cy="15.5" r=".46"/><circle cx="8.5" cy="15.5" r=".46"/><circle cx="10.5" cy="15.5" r=".46"/><circle cx="11.5" cy="15.5" r=".46"/><circle cx="12.5" cy="15.5" r=".46"/><circle cx="23.5" cy="15.5" r=".46"/><circle cx="24.5" cy="15.5" r=".46"/><circle cx="26.5" cy="15.5" r=".46"/><circle cx="31.5" cy="15.5" r=".46"/><circle cx="33.5" cy="15.5" r=".46"/><circle cx="35.5" cy="15.5" r=".46"/><circle cx="36.5" cy="15.5" r=".46"/><circle cx="0.5" cy="16.5" r=".46"/><circle cx="1.5" cy="16.5" r=".46"/><circle cx="4.5" cy="16.5" r=".46"/><circle cx="6.5" cy="16.5" r=".46"/><circle cx="7.5" cy="16.5" r=".46"/><circle cx="9.5" cy="16.5" r=".46"/><circle cx="23.5" cy="16.5" r=".46"/><circle cx="26.5" cy="16.5" r=".46"/><circle cx="30.5" cy="16.5" r=".46"/><circle cx="31.5" cy="16.5" r=".46"/><circle cx="35.5" cy="16.5" r=".46"/><circle cx="3.5" cy="17.5" r=".46"/><circle cx="5.5" cy="17.5" r=".46"/><circle cx="7.5" cy="17.5" r=".46"/><circle cx="8.5" cy="17.5" r=".46"/><circle cx="12.5" cy="17.5" r=".46"/><circle cx="25.5" cy="17.5" r=".46"/><circle cx="27.5" cy="17.5" r=".46"/><circle cx="28.5" cy="17.5" r=".46"/><circle cx="30.5" cy="17.5" r=".46"/><circle cx="31.5" cy="17.5" r=".46"/><circle cx="36.5" cy="17.5" r=".46"/><circle cx="0.5" cy="18.5" r=".46"/><circle cx="2.5" cy="18.5" r=".46"/><circle cx="4.5" cy="18.5" r=".46"/><circle cx="6.5" cy="18.5" r=".46"/><circle cx="8.5" cy="18.5" r=".46"/><circle cx="9.5" cy="18.5" r=".46"/><circle cx="10.5" cy="18.5" r=".46"/><circle cx="11.5" cy="18.5" r=".46"/><circle cx="27.5" cy="18.5" r=".46"/><circle cx="29.5" cy="18.5" r=".46"/><circle cx="30.5" cy="18.5" r=".46"/><circle cx="32.5" cy="18.5" r=".46"/><circle cx="34.5" cy="18.5" r=".46"/><circle cx="36.5" cy="18.5" r=".46"/><circle cx="1.5" cy="19.5" r=".46"/><circle cx="4.5" cy="19.5" r=".46"/><circle cx="5.5" cy="19.5" r=".46"/><circle cx="7.5" cy="19.5" r=".46"/><circle cx="10.5" cy="19.5" r=".46"/><circle cx="11.5" cy="19.5" r=".46"/><circle cx="24.5" cy="19.5" r=".46"/><circle cx="25.5" cy="19.5" r=".46"/><circle cx="30.5" cy="19.5" r=".46"/><circle cx="33.5" cy="19.5" r=".46"/><circle cx="35.5" cy="19.5" r=".46"/><circle cx="1.5" cy="20.5" r=".46"/><circle cx="6.5" cy="20.5" r=".46"/><circle cx="9.5" cy="20.5" r=".46"/><circle cx="23.5" cy="20.5" r=".46"/><circle cx="25.5" cy="20.5" r=".46"/><circle cx="27.5" cy="20.5" r=".46"/><circle cx="28.5" cy="20.5" r=".46"/><circle cx="29.5" cy="20.5" r=".46"/><circle cx="30.5" cy="20.5" r=".46"/><circle cx="33.5" cy="20.5" r=".46"/><circle cx="0.5" cy="21.5" r=".46"/><circle cx="5.5" cy="21.5" r=".46"/><circle cx="7.5" cy="21.5" r=".46"/><circle cx="9.5" cy="21.5" r=".46"/><circle cx="12.5" cy="21.5" r=".46"/><circle cx="13.5" cy="21.5" r=".46"/><circle cx="25.5" cy="21.5" r=".46"/><circle cx="27.5" cy="21.5" r=".46"/><circle cx="30.5" cy="21.5" r=".46"/><circle cx="31.5" cy="21.5" r=".46"/><circle cx="33.5" cy="21.5" r=".46"/><circle cx="35.5" cy="21.5" r=".46"/><circle cx="0.5" cy="22.5" r=".46"/><circle cx="2.5" cy="22.5" r=".46"/><circle cx="3.5" cy="22.5" r=".46"/><circle cx="5.5" cy="22.5" r=".46"/><circle cx="6.5" cy="22.5" r=".46"/><circle cx="7.5" cy="22.5" r=".46"/><circle cx="9.5" cy="22.5" r=".46"/><circle cx="11.5" cy="22.5" r=".46"/><circle cx="14.5" cy="22.5" r=".46"/><circle cx="23.5" cy="22.5" r=".46"/><circle cx="24.5" cy="22.5" r=".46"/><circle cx="27.5" cy="22.5" r=".46"/><circle cx="28.5" cy="22.5" r=".46"/><circle cx="31.5" cy="22.5" r=".46"/><circle cx="32.5" cy="22.5" r=".46"/><circle cx="33.5" cy="22.5" r=".46"/><circle cx="34.5" cy="22.5" r=".46"/><circle cx="35.5" cy="22.5" r=".46"/><circle cx="36.5" cy="22.5" r=".46"/><circle cx="1.5" cy="23.5" r=".46"/><circle cx="3.5" cy="23.5" r=".46"/><circle cx="5.5" cy="23.5" r=".46"/><circle cx="7.5" cy="23.5" r=".46"/><circle cx="8.5" cy="23.5" r=".46"/><circle cx="12.5" cy="23.5" r=".46"/><circle cx="14.5" cy="23.5" r=".46"/><circle cx="15.5" cy="23.5" r=".46"/><circle cx="16.5" cy="23.5" r=".46"/><circle cx="23.5" cy="23.5" r=".46"/><circle cx="25.5" cy="23.5" r=".46"/><circle cx="27.5" cy="23.5" r=".46"/><circle cx="30.5" cy="23.5" r=".46"/><circle cx="31.5" cy="23.5" r=".46"/><circle cx="33.5" cy="23.5" r=".46"/><circle cx="35.5" cy="23.5" r=".46"/><circle cx="2.5" cy="24.5" r=".46"/><circle cx="4.5" cy="24.5" r=".46"/><circle cx="6.5" cy="24.5" r=".46"/><circle cx="8.5" cy="24.5" r=".46"/><circle cx="11.5" cy="24.5" r=".46"/><circle cx="14.5" cy="24.5" r=".46"/><circle cx="20.5" cy="24.5" r=".46"/><circle cx="21.5" cy="24.5" r=".46"/><circle cx="24.5" cy="24.5" r=".46"/><circle cx="25.5" cy="24.5" r=".46"/><circle cx="31.5" cy="24.5" r=".46"/><circle cx="32.5" cy="24.5" r=".46"/><circle cx="33.5" cy="24.5" r=".46"/><circle cx="35.5" cy="24.5" r=".46"/><circle cx="36.5" cy="24.5" r=".46"/><circle cx="1.5" cy="25.5" r=".46"/><circle cx="2.5" cy="25.5" r=".46"/><circle cx="5.5" cy="25.5" r=".46"/><circle cx="12.5" cy="25.5" r=".46"/><circle cx="16.5" cy="25.5" r=".46"/><circle cx="18.5" cy="25.5" r=".46"/><circle cx="19.5" cy="25.5" r=".46"/><circle cx="24.5" cy="25.5" r=".46"/><circle cx="25.5" cy="25.5" r=".46"/><circle cx="31.5" cy="25.5" r=".46"/><circle cx="32.5" cy="25.5" r=".46"/><circle cx="36.5" cy="25.5" r=".46"/><circle cx="0.5" cy="26.5" r=".46"/><circle cx="1.5" cy="26.5" r=".46"/><circle cx="2.5" cy="26.5" r=".46"/><circle cx="5.5" cy="26.5" r=".46"/><circle cx="6.5" cy="26.5" r=".46"/><circle cx="7.5" cy="26.5" r=".46"/><circle cx="12.5" cy="26.5" r=".46"/><circle cx="15.5" cy="26.5" r=".46"/><circle cx="17.5" cy="26.5" r=".46"/><circle cx="18.5" cy="26.5" r=".46"/><circle cx="19.5" cy="26.5" r=".46"/><circle cx="22.5" cy="26.5" r=".46"/><circle cx="24.5" cy="26.5" r=".46"/><circle cx="26.5" cy="26.5" r=".46"/><circle cx="27.5" cy="26.5" r=".46"/><circle cx="29.5" cy="26.5" r=".46"/><circle cx="30.5" cy="26.5" r=".46"/><circle cx="31.5" cy="26.5" r=".46"/><circle cx="34.5" cy="26.5" r=".46"/><circle cx="36.5" cy="26.5" r=".46"/><circle cx="2.5" cy="27.5" r=".46"/><circle cx="3.5" cy="27.5" r=".46"/><circle cx="4.5" cy="27.5" r=".46"/><circle cx="7.5" cy="27.5" r=".46"/><circle cx="9.5" cy="27.5" r=".46"/><circle cx="10.5" cy="27.5" r=".46"/><circle cx="11.5" cy="27.5" r=".46"/><circle cx="13.5" cy="27.5" r=".46"/><circle cx="16.5" cy="27.5" r=".46"/><circle cx="20.5" cy="27.5" r=".46"/><circle cx="23.5" cy="27.5" r=".46"/><circle cx="24.5" cy="27.5" r=".46"/><circle cx="26.5" cy="27.5" r=".46"/><circle cx="29.5" cy="27.5" r=".46"/><circle cx="30.5" cy="27.5" r=".46"/><circle cx="31.5" cy="27.5" r=".46"/><circle cx="32.5" cy="27.5" r=".46"/><circle cx="35.5" cy="27.5" r=".46"/><circle cx="36.5" cy="27.5" r=".46"/><circle cx="0.5" cy="28.5" r=".46"/><circle cx="1.5" cy="28.5" r=".46"/><circle cx="3.5" cy="28.5" r=".46"/><circle cx="4.5" cy="28.5" r=".46"/><circle cx="5.5" cy="28.5" r=".46"/><circle cx="6.5" cy="28.5" r=".46"/><circle cx="10.5" cy="28.5" r=".46"/><circle cx="11.5" cy="28.5" r=".46"/><circle cx="12.5" cy="28.5" r=".46"/><circle cx="14.5" cy="28.5" r=".46"/><circle cx="15.5" cy="28.5" r=".46"/><circle cx="16.5" cy="28.5" r=".46"/><circle cx="19.5" cy="28.5" r=".46"/><circle cx="20.5" cy="28.5" r=".46"/><circle cx="21.5" cy="28.5" r=".46"/><circle cx="22.5" cy="28.5" r=".46"/><circle cx="24.5" cy="28.5" r=".46"/><circle cx="27.5" cy="28.5" r=".46"/><circle cx="28.5" cy="28.5" r=".46"/><circle cx="29.5" cy="28.5" r=".46"/><circle cx="30.5" cy="28.5" r=".46"/><circle cx="31.5" cy="28.5" r=".46"/><circle cx="32.5" cy="28.5" r=".46"/><circle cx="34.5" cy="28.5" r=".46"/><circle cx="36.5" cy="28.5" r=".46"/><circle cx="8.5" cy="29.5" r=".46"/><circle cx="10.5" cy="29.5" r=".46"/><circle cx="11.5" cy="29.5" r=".46"/><circle cx="14.5" cy="29.5" r=".46"/><circle cx="17.5" cy="29.5" r=".46"/><circle cx="18.5" cy="29.5" r=".46"/><circle cx="19.5" cy="29.5" r=".46"/><circle cx="24.5" cy="29.5" r=".46"/><circle cx="25.5" cy="29.5" r=".46"/><circle cx="28.5" cy="29.5" r=".46"/><circle cx="32.5" cy="29.5" r=".46"/><circle cx="33.5" cy="29.5" r=".46"/><circle cx="36.5" cy="29.5" r=".46"/><circle cx="8.5" cy="30.5" r=".46"/><circle cx="10.5" cy="30.5" r=".46"/><circle cx="14.5" cy="30.5" r=".46"/><circle cx="16.5" cy="30.5" r=".46"/><circle cx="24.5" cy="30.5" r=".46"/><circle cx="28.5" cy="30.5" r=".46"/><circle cx="30.5" cy="30.5" r=".46"/><circle cx="32.5" cy="30.5" r=".46"/><circle cx="33.5" cy="30.5" r=".46"/><circle cx="34.5" cy="30.5" r=".46"/><circle cx="36.5" cy="30.5" r=".46"/><circle cx="8.5" cy="31.5" r=".46"/><circle cx="9.5" cy="31.5" r=".46"/><circle cx="11.5" cy="31.5" r=".46"/><circle cx="15.5" cy="31.5" r=".46"/><circle cx="16.5" cy="31.5" r=".46"/><circle cx="17.5" cy="31.5" r=".46"/><circle cx="20.5" cy="31.5" r=".46"/><circle cx="21.5" cy="31.5" r=".46"/><circle cx="23.5" cy="31.5" r=".46"/><circle cx="24.5" cy="31.5" r=".46"/><circle cx="27.5" cy="31.5" r=".46"/><circle cx="28.5" cy="31.5" r=".46"/><circle cx="32.5" cy="31.5" r=".46"/><circle cx="33.5" cy="31.5" r=".46"/><circle cx="9.5" cy="32.5" r=".46"/><circle cx="13.5" cy="32.5" r=".46"/><circle cx="18.5" cy="32.5" r=".46"/><circle cx="27.5" cy="32.5" r=".46"/><circle cx="28.5" cy="32.5" r=".46"/><circle cx="29.5" cy="32.5" r=".46"/><circle cx="30.5" cy="32.5" r=".46"/><circle cx="31.5" cy="32.5" r=".46"/><circle cx="32.5" cy="32.5" r=".46"/><circle cx="36.5" cy="32.5" r=".46"/><circle cx="9.5" cy="33.5" r=".46"/><circle cx="12.5" cy="33.5" r=".46"/><circle cx="14.5" cy="33.5" r=".46"/><circle cx="16.5" cy="33.5" r=".46"/><circle cx="18.5" cy="33.5" r=".46"/><circle cx="20.5" cy="33.5" r=".46"/><circle cx="22.5" cy="33.5" r=".46"/><circle cx="28.5" cy="33.5" r=".46"/><circle cx="31.5" cy="33.5" r=".46"/><circle cx="32.5" cy="33.5" r=".46"/><circle cx="33.5" cy="33.5" r=".46"/><circle cx="34.5" cy="33.5" r=".46"/><circle cx="35.5" cy="33.5" r=".46"/><circle cx="8.5" cy="34.5" r=".46"/><circle cx="9.5" cy="34.5" r=".46"/><circle cx="11.5" cy="34.5" r=".46"/><circle cx="12.5" cy="34.5" r=".46"/><circle cx="13.5" cy="34.5" r=".46"/><circle cx="14.5" cy="34.5" r=".46"/><circle cx="19.5" cy="34.5" r=".46"/><circle cx="22.5" cy="34.5" r=".46"/><circle cx="23.5" cy="34.5" r=".46"/><circle cx="25.5" cy="34.5" r=".46"/><circle cx="26.5" cy="34.5" r=".46"/><circle cx="32.5" cy="34.5" r=".46"/><circle cx="33.5" cy="34.5" r=".46"/><circle cx="35.5" cy="34.5" r=".46"/><circle cx="36.5" cy="34.5" r=".46"/><circle cx="9.5" cy="35.5" r=".46"/><circle cx="10.5" cy="35.5" r=".46"/><circle cx="11.5" cy="35.5" r=".46"/><circle cx="12.5" cy="35.5" r=".46"/><circle cx="14.5" cy="35.5" r=".46"/><circle cx="15.5" cy="35.5" r=".46"/><circle cx="16.5" cy="35.5" r=".46"/><circle cx="17.5" cy="35.5" r=".46"/><circle cx="18.5" cy="35.5" r=".46"/><circle cx="19.5" cy="35.5" r=".46"/><circle cx="20.5" cy="35.5" r=".46"/><circle cx="26.5" cy="35.5" r=".46"/><circle cx="28.5" cy="35.5" r=".46"/><circle cx="29.5" cy="35.5" r=".46"/><circle cx="30.5" cy="35.5" r=".46"/><circle cx="33.5" cy="35.5" r=".46"/><circle cx="9.5" cy="36.5" r=".46"/><circle cx="10.5" cy="36.5" r=".46"/><circle cx="12.5" cy="36.5" r=".46"/><circle cx="17.5" cy="36.5" r=".46"/><circle cx="20.5" cy="36.5" r=".46"/><circle cx="22.5" cy="36.5" r=".46"/><circle cx="23.5" cy="36.5" r=".46"/><circle cx="25.5" cy="36.5" r=".46"/><circle cx="26.5" cy="36.5" r=".46"/><circle cx="28.5" cy="36.5" r=".46"/><circle cx="29.5" cy="36.5" r=".46"/><circle cx="30.5" cy="36.5" r=".46"/><circle cx="31.5" cy="36.5" r=".46"/><circle cx="33.5" cy="36.5" r=".46"/><circle cx="36.5" cy="36.5" r=".46"/></g><rect x="0.5" y="0.5" width="6" height="6" rx="1.8" fill="none" stroke="#0E1A44" stroke-width="1"/><rect x="2" y="2" width="3" height="3" rx=".9" fill="url(#sqeye)"/><rect x="30.5" y="0.5" width="6" height="6" rx="1.8" fill="none" stroke="#0E1A44" stroke-width="1"/><rect x="32" y="2" width="3" height="3" rx=".9" fill="url(#sqeye)"/><rect x="0.5" y="30.5" width="6" height="6" rx="1.8" fill="none" stroke="#0E1A44" stroke-width="1"/><rect x="2" y="32" width="3" height="3" rx=".9" fill="url(#sqeye)"/><circle cx="18.5" cy="18.5" r="4.9" fill="#FFF8E4"/><svg x="13.899999999999999" y="13.899999999999999" width="9.200000000000001" height="9.200000000000001" viewBox="0 0 200 200">
+        <div class="qrwrap"><svg viewBox="-4 -4 45 45" class="qr" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="QR code: https://kdchannels.github.io"><defs><linearGradient id="sqeye" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#B8872E"/><stop offset=".5" stop-color="#8C6420"/><stop offset="1" stop-color="#6B4A14"/></linearGradient></defs><rect x="-4" y="-4" width="45" height="45" rx="3" fill="#FFF8E4"/><g fill="#0E1A44"><circle cx="8.5" cy="0.5" r=".46"/><circle cx="9.5" cy="0.5" r=".46"/><circle cx="11.5" cy="0.5" r=".46"/><circle cx="13.5" cy="0.5" r=".46"/><circle cx="14.5" cy="0.5" r=".46"/><circle cx="17.5" cy="0.5" r=".46"/><circle cx="20.5" cy="0.5" r=".46"/><circle cx="21.5" cy="0.5" r=".46"/><circle cx="23.5" cy="0.5" r=".46"/><circle cx="26.5" cy="0.5" r=".46"/><circle cx="28.5" cy="0.5" r=".46"/><circle cx="11.5" cy="1.5" r=".46"/><circle cx="12.5" cy="1.5" r=".46"/><circle cx="13.5" cy="1.5" r=".46"/><circle cx="14.5" cy="1.5" r=".46"/><circle cx="16.5" cy="1.5" r=".46"/><circle cx="17.5" cy="1.5" r=".46"/><circle cx="18.5" cy="1.5" r=".46"/><circle cx="19.5" cy="1.5" r=".46"/><circle cx="20.5" cy="1.5" r=".46"/><circle cx="22.5" cy="1.5" r=".46"/><circle cx="24.5" cy="1.5" r=".46"/><circle cx="25.5" cy="1.5" r=".46"/><circle cx="26.5" cy="1.5" r=".46"/><circle cx="28.5" cy="1.5" r=".46"/><circle cx="8.5" cy="2.5" r=".46"/><circle cx="10.5" cy="2.5" r=".46"/><circle cx="12.5" cy="2.5" r=".46"/><circle cx="13.5" cy="2.5" r=".46"/><circle cx="15.5" cy="2.5" r=".46"/><circle cx="16.5" cy="2.5" r=".46"/><circle cx="17.5" cy="2.5" r=".46"/><circle cx="20.5" cy="2.5" r=".46"/><circle cx="22.5" cy="2.5" r=".46"/><circle cx="23.5" cy="2.5" r=".46"/><circle cx="24.5" cy="2.5" r=".46"/><circle cx="25.5" cy="2.5" r=".46"/><circle cx="10.5" cy="3.5" r=".46"/><circle cx="11.5" cy="3.5" r=".46"/><circle cx="12.5" cy="3.5" r=".46"/><circle cx="13.5" cy="3.5" r=".46"/><circle cx="14.5" cy="3.5" r=".46"/><circle cx="15.5" cy="3.5" r=".46"/><circle cx="18.5" cy="3.5" r=".46"/><circle cx="21.5" cy="3.5" r=".46"/><circle cx="22.5" cy="3.5" r=".46"/><circle cx="28.5" cy="3.5" r=".46"/><circle cx="8.5" cy="4.5" r=".46"/><circle cx="10.5" cy="4.5" r=".46"/><circle cx="13.5" cy="4.5" r=".46"/><circle cx="15.5" cy="4.5" r=".46"/><circle cx="16.5" cy="4.5" r=".46"/><circle cx="25.5" cy="4.5" r=".46"/><circle cx="9.5" cy="5.5" r=".46"/><circle cx="10.5" cy="5.5" r=".46"/><circle cx="12.5" cy="5.5" r=".46"/><circle cx="13.5" cy="5.5" r=".46"/><circle cx="17.5" cy="5.5" r=".46"/><circle cx="19.5" cy="5.5" r=".46"/><circle cx="20.5" cy="5.5" r=".46"/><circle cx="22.5" cy="5.5" r=".46"/><circle cx="23.5" cy="5.5" r=".46"/><circle cx="25.5" cy="5.5" r=".46"/><circle cx="26.5" cy="5.5" r=".46"/><circle cx="28.5" cy="5.5" r=".46"/><circle cx="8.5" cy="6.5" r=".46"/><circle cx="10.5" cy="6.5" r=".46"/><circle cx="12.5" cy="6.5" r=".46"/><circle cx="14.5" cy="6.5" r=".46"/><circle cx="16.5" cy="6.5" r=".46"/><circle cx="18.5" cy="6.5" r=".46"/><circle cx="20.5" cy="6.5" r=".46"/><circle cx="22.5" cy="6.5" r=".46"/><circle cx="24.5" cy="6.5" r=".46"/><circle cx="26.5" cy="6.5" r=".46"/><circle cx="28.5" cy="6.5" r=".46"/><circle cx="8.5" cy="7.5" r=".46"/><circle cx="9.5" cy="7.5" r=".46"/><circle cx="10.5" cy="7.5" r=".46"/><circle cx="11.5" cy="7.5" r=".46"/><circle cx="13.5" cy="7.5" r=".46"/><circle cx="14.5" cy="7.5" r=".46"/><circle cx="15.5" cy="7.5" r=".46"/><circle cx="17.5" cy="7.5" r=".46"/><circle cx="18.5" cy="7.5" r=".46"/><circle cx="19.5" cy="7.5" r=".46"/><circle cx="20.5" cy="7.5" r=".46"/><circle cx="21.5" cy="7.5" r=".46"/><circle cx="22.5" cy="7.5" r=".46"/><circle cx="23.5" cy="7.5" r=".46"/><circle cx="25.5" cy="7.5" r=".46"/><circle cx="27.5" cy="7.5" r=".46"/><circle cx="28.5" cy="7.5" r=".46"/><circle cx="5.5" cy="8.5" r=".46"/><circle cx="6.5" cy="8.5" r=".46"/><circle cx="9.5" cy="8.5" r=".46"/><circle cx="10.5" cy="8.5" r=".46"/><circle cx="12.5" cy="8.5" r=".46"/><circle cx="13.5" cy="8.5" r=".46"/><circle cx="14.5" cy="8.5" r=".46"/><circle cx="16.5" cy="8.5" r=".46"/><circle cx="19.5" cy="8.5" r=".46"/><circle cx="20.5" cy="8.5" r=".46"/><circle cx="23.5" cy="8.5" r=".46"/><circle cx="24.5" cy="8.5" r=".46"/><circle cx="26.5" cy="8.5" r=".46"/><circle cx="28.5" cy="8.5" r=".46"/><circle cx="30.5" cy="8.5" r=".46"/><circle cx="32.5" cy="8.5" r=".46"/><circle cx="34.5" cy="8.5" r=".46"/><circle cx="36.5" cy="8.5" r=".46"/><circle cx="3.5" cy="9.5" r=".46"/><circle cx="4.5" cy="9.5" r=".46"/><circle cx="5.5" cy="9.5" r=".46"/><circle cx="10.5" cy="9.5" r=".46"/><circle cx="13.5" cy="9.5" r=".46"/><circle cx="15.5" cy="9.5" r=".46"/><circle cx="17.5" cy="9.5" r=".46"/><circle cx="18.5" cy="9.5" r=".46"/><circle cx="19.5" cy="9.5" r=".46"/><circle cx="21.5" cy="9.5" r=".46"/><circle cx="24.5" cy="9.5" r=".46"/><circle cx="25.5" cy="9.5" r=".46"/><circle cx="26.5" cy="9.5" r=".46"/><circle cx="28.5" cy="9.5" r=".46"/><circle cx="30.5" cy="9.5" r=".46"/><circle cx="31.5" cy="9.5" r=".46"/><circle cx="34.5" cy="9.5" r=".46"/><circle cx="0.5" cy="10.5" r=".46"/><circle cx="1.5" cy="10.5" r=".46"/><circle cx="2.5" cy="10.5" r=".46"/><circle cx="3.5" cy="10.5" r=".46"/><circle cx="5.5" cy="10.5" r=".46"/><circle cx="6.5" cy="10.5" r=".46"/><circle cx="8.5" cy="10.5" r=".46"/><circle cx="10.5" cy="10.5" r=".46"/><circle cx="11.5" cy="10.5" r=".46"/><circle cx="14.5" cy="10.5" r=".46"/><circle cx="16.5" cy="10.5" r=".46"/><circle cx="21.5" cy="10.5" r=".46"/><circle cx="23.5" cy="10.5" r=".46"/><circle cx="24.5" cy="10.5" r=".46"/><circle cx="25.5" cy="10.5" r=".46"/><circle cx="26.5" cy="10.5" r=".46"/><circle cx="27.5" cy="10.5" r=".46"/><circle cx="28.5" cy="10.5" r=".46"/><circle cx="30.5" cy="10.5" r=".46"/><circle cx="32.5" cy="10.5" r=".46"/><circle cx="35.5" cy="10.5" r=".46"/><circle cx="36.5" cy="10.5" r=".46"/><circle cx="0.5" cy="11.5" r=".46"/><circle cx="1.5" cy="11.5" r=".46"/><circle cx="2.5" cy="11.5" r=".46"/><circle cx="4.5" cy="11.5" r=".46"/><circle cx="5.5" cy="11.5" r=".46"/><circle cx="8.5" cy="11.5" r=".46"/><circle cx="10.5" cy="11.5" r=".46"/><circle cx="11.5" cy="11.5" r=".46"/><circle cx="12.5" cy="11.5" r=".46"/><circle cx="14.5" cy="11.5" r=".46"/><circle cx="15.5" cy="11.5" r=".46"/><circle cx="17.5" cy="11.5" r=".46"/><circle cx="18.5" cy="11.5" r=".46"/><circle cx="20.5" cy="11.5" r=".46"/><circle cx="21.5" cy="11.5" r=".46"/><circle cx="22.5" cy="11.5" r=".46"/><circle cx="23.5" cy="11.5" r=".46"/><circle cx="26.5" cy="11.5" r=".46"/><circle cx="30.5" cy="11.5" r=".46"/><circle cx="31.5" cy="11.5" r=".46"/><circle cx="32.5" cy="11.5" r=".46"/><circle cx="36.5" cy="11.5" r=".46"/><circle cx="2.5" cy="12.5" r=".46"/><circle cx="4.5" cy="12.5" r=".46"/><circle cx="6.5" cy="12.5" r=".46"/><circle cx="9.5" cy="12.5" r=".46"/><circle cx="13.5" cy="12.5" r=".46"/><circle cx="14.5" cy="12.5" r=".46"/><circle cx="15.5" cy="12.5" r=".46"/><circle cx="17.5" cy="12.5" r=".46"/><circle cx="18.5" cy="12.5" r=".46"/><circle cx="22.5" cy="12.5" r=".46"/><circle cx="23.5" cy="12.5" r=".46"/><circle cx="24.5" cy="12.5" r=".46"/><circle cx="27.5" cy="12.5" r=".46"/><circle cx="28.5" cy="12.5" r=".46"/><circle cx="30.5" cy="12.5" r=".46"/><circle cx="31.5" cy="12.5" r=".46"/><circle cx="34.5" cy="12.5" r=".46"/><circle cx="36.5" cy="12.5" r=".46"/><circle cx="1.5" cy="13.5" r=".46"/><circle cx="4.5" cy="13.5" r=".46"/><circle cx="7.5" cy="13.5" r=".46"/><circle cx="12.5" cy="13.5" r=".46"/><circle cx="22.5" cy="13.5" r=".46"/><circle cx="24.5" cy="13.5" r=".46"/><circle cx="25.5" cy="13.5" r=".46"/><circle cx="29.5" cy="13.5" r=".46"/><circle cx="34.5" cy="13.5" r=".46"/><circle cx="0.5" cy="14.5" r=".46"/><circle cx="1.5" cy="14.5" r=".46"/><circle cx="3.5" cy="14.5" r=".46"/><circle cx="5.5" cy="14.5" r=".46"/><circle cx="6.5" cy="14.5" r=".46"/><circle cx="9.5" cy="14.5" r=".46"/><circle cx="11.5" cy="14.5" r=".46"/><circle cx="22.5" cy="14.5" r=".46"/><circle cx="23.5" cy="14.5" r=".46"/><circle cx="25.5" cy="14.5" r=".46"/><circle cx="26.5" cy="14.5" r=".46"/><circle cx="27.5" cy="14.5" r=".46"/><circle cx="28.5" cy="14.5" r=".46"/><circle cx="29.5" cy="14.5" r=".46"/><circle cx="32.5" cy="14.5" r=".46"/><circle cx="33.5" cy="14.5" r=".46"/><circle cx="35.5" cy="14.5" r=".46"/><circle cx="36.5" cy="14.5" r=".46"/><circle cx="1.5" cy="15.5" r=".46"/><circle cx="2.5" cy="15.5" r=".46"/><circle cx="3.5" cy="15.5" r=".46"/><circle cx="4.5" cy="15.5" r=".46"/><circle cx="5.5" cy="15.5" r=".46"/><circle cx="9.5" cy="15.5" r=".46"/><circle cx="10.5" cy="15.5" r=".46"/><circle cx="12.5" cy="15.5" r=".46"/><circle cx="24.5" cy="15.5" r=".46"/><circle cx="26.5" cy="15.5" r=".46"/><circle cx="27.5" cy="15.5" r=".46"/><circle cx="32.5" cy="15.5" r=".46"/><circle cx="33.5" cy="15.5" r=".46"/><circle cx="34.5" cy="15.5" r=".46"/><circle cx="35.5" cy="15.5" r=".46"/><circle cx="4.5" cy="16.5" r=".46"/><circle cx="5.5" cy="16.5" r=".46"/><circle cx="6.5" cy="16.5" r=".46"/><circle cx="9.5" cy="16.5" r=".46"/><circle cx="12.5" cy="16.5" r=".46"/><circle cx="24.5" cy="16.5" r=".46"/><circle cx="25.5" cy="16.5" r=".46"/><circle cx="26.5" cy="16.5" r=".46"/><circle cx="28.5" cy="16.5" r=".46"/><circle cx="29.5" cy="16.5" r=".46"/><circle cx="30.5" cy="16.5" r=".46"/><circle cx="32.5" cy="16.5" r=".46"/><circle cx="34.5" cy="16.5" r=".46"/><circle cx="36.5" cy="16.5" r=".46"/><circle cx="0.5" cy="17.5" r=".46"/><circle cx="4.5" cy="17.5" r=".46"/><circle cx="11.5" cy="17.5" r=".46"/><circle cx="27.5" cy="17.5" r=".46"/><circle cx="28.5" cy="17.5" r=".46"/><circle cx="31.5" cy="17.5" r=".46"/><circle cx="34.5" cy="17.5" r=".46"/><circle cx="1.5" cy="18.5" r=".46"/><circle cx="2.5" cy="18.5" r=".46"/><circle cx="3.5" cy="18.5" r=".46"/><circle cx="4.5" cy="18.5" r=".46"/><circle cx="6.5" cy="18.5" r=".46"/><circle cx="7.5" cy="18.5" r=".46"/><circle cx="11.5" cy="18.5" r=".46"/><circle cx="12.5" cy="18.5" r=".46"/><circle cx="24.5" cy="18.5" r=".46"/><circle cx="25.5" cy="18.5" r=".46"/><circle cx="26.5" cy="18.5" r=".46"/><circle cx="27.5" cy="18.5" r=".46"/><circle cx="28.5" cy="18.5" r=".46"/><circle cx="31.5" cy="18.5" r=".46"/><circle cx="33.5" cy="18.5" r=".46"/><circle cx="34.5" cy="18.5" r=".46"/><circle cx="36.5" cy="18.5" r=".46"/><circle cx="0.5" cy="19.5" r=".46"/><circle cx="1.5" cy="19.5" r=".46"/><circle cx="5.5" cy="19.5" r=".46"/><circle cx="7.5" cy="19.5" r=".46"/><circle cx="9.5" cy="19.5" r=".46"/><circle cx="11.5" cy="19.5" r=".46"/><circle cx="12.5" cy="19.5" r=".46"/><circle cx="24.5" cy="19.5" r=".46"/><circle cx="26.5" cy="19.5" r=".46"/><circle cx="28.5" cy="19.5" r=".46"/><circle cx="31.5" cy="19.5" r=".46"/><circle cx="32.5" cy="19.5" r=".46"/><circle cx="33.5" cy="19.5" r=".46"/><circle cx="36.5" cy="19.5" r=".46"/><circle cx="2.5" cy="20.5" r=".46"/><circle cx="4.5" cy="20.5" r=".46"/><circle cx="6.5" cy="20.5" r=".46"/><circle cx="10.5" cy="20.5" r=".46"/><circle cx="11.5" cy="20.5" r=".46"/><circle cx="13.5" cy="20.5" r=".46"/><circle cx="23.5" cy="20.5" r=".46"/><circle cx="24.5" cy="20.5" r=".46"/><circle cx="29.5" cy="20.5" r=".46"/><circle cx="30.5" cy="20.5" r=".46"/><circle cx="31.5" cy="20.5" r=".46"/><circle cx="32.5" cy="20.5" r=".46"/><circle cx="33.5" cy="20.5" r=".46"/><circle cx="34.5" cy="20.5" r=".46"/><circle cx="35.5" cy="20.5" r=".46"/><circle cx="0.5" cy="21.5" r=".46"/><circle cx="4.5" cy="21.5" r=".46"/><circle cx="5.5" cy="21.5" r=".46"/><circle cx="7.5" cy="21.5" r=".46"/><circle cx="9.5" cy="21.5" r=".46"/><circle cx="11.5" cy="21.5" r=".46"/><circle cx="27.5" cy="21.5" r=".46"/><circle cx="28.5" cy="21.5" r=".46"/><circle cx="31.5" cy="21.5" r=".46"/><circle cx="32.5" cy="21.5" r=".46"/><circle cx="36.5" cy="21.5" r=".46"/><circle cx="3.5" cy="22.5" r=".46"/><circle cx="5.5" cy="22.5" r=".46"/><circle cx="6.5" cy="22.5" r=".46"/><circle cx="7.5" cy="22.5" r=".46"/><circle cx="8.5" cy="22.5" r=".46"/><circle cx="10.5" cy="22.5" r=".46"/><circle cx="11.5" cy="22.5" r=".46"/><circle cx="12.5" cy="22.5" r=".46"/><circle cx="22.5" cy="22.5" r=".46"/><circle cx="27.5" cy="22.5" r=".46"/><circle cx="30.5" cy="22.5" r=".46"/><circle cx="33.5" cy="22.5" r=".46"/><circle cx="35.5" cy="22.5" r=".46"/><circle cx="0.5" cy="23.5" r=".46"/><circle cx="3.5" cy="23.5" r=".46"/><circle cx="7.5" cy="23.5" r=".46"/><circle cx="8.5" cy="23.5" r=".46"/><circle cx="9.5" cy="23.5" r=".46"/><circle cx="11.5" cy="23.5" r=".46"/><circle cx="12.5" cy="23.5" r=".46"/><circle cx="16.5" cy="23.5" r=".46"/><circle cx="20.5" cy="23.5" r=".46"/><circle cx="24.5" cy="23.5" r=".46"/><circle cx="26.5" cy="23.5" r=".46"/><circle cx="27.5" cy="23.5" r=".46"/><circle cx="29.5" cy="23.5" r=".46"/><circle cx="30.5" cy="23.5" r=".46"/><circle cx="31.5" cy="23.5" r=".46"/><circle cx="33.5" cy="23.5" r=".46"/><circle cx="3.5" cy="24.5" r=".46"/><circle cx="4.5" cy="24.5" r=".46"/><circle cx="6.5" cy="24.5" r=".46"/><circle cx="8.5" cy="24.5" r=".46"/><circle cx="9.5" cy="24.5" r=".46"/><circle cx="12.5" cy="24.5" r=".46"/><circle cx="13.5" cy="24.5" r=".46"/><circle cx="15.5" cy="24.5" r=".46"/><circle cx="18.5" cy="24.5" r=".46"/><circle cx="20.5" cy="24.5" r=".46"/><circle cx="21.5" cy="24.5" r=".46"/><circle cx="22.5" cy="24.5" r=".46"/><circle cx="23.5" cy="24.5" r=".46"/><circle cx="25.5" cy="24.5" r=".46"/><circle cx="26.5" cy="24.5" r=".46"/><circle cx="28.5" cy="24.5" r=".46"/><circle cx="29.5" cy="24.5" r=".46"/><circle cx="30.5" cy="24.5" r=".46"/><circle cx="32.5" cy="24.5" r=".46"/><circle cx="0.5" cy="25.5" r=".46"/><circle cx="1.5" cy="25.5" r=".46"/><circle cx="3.5" cy="25.5" r=".46"/><circle cx="4.5" cy="25.5" r=".46"/><circle cx="5.5" cy="25.5" r=".46"/><circle cx="8.5" cy="25.5" r=".46"/><circle cx="10.5" cy="25.5" r=".46"/><circle cx="11.5" cy="25.5" r=".46"/><circle cx="14.5" cy="25.5" r=".46"/><circle cx="16.5" cy="25.5" r=".46"/><circle cx="17.5" cy="25.5" r=".46"/><circle cx="18.5" cy="25.5" r=".46"/><circle cx="21.5" cy="25.5" r=".46"/><circle cx="22.5" cy="25.5" r=".46"/><circle cx="24.5" cy="25.5" r=".46"/><circle cx="25.5" cy="25.5" r=".46"/><circle cx="26.5" cy="25.5" r=".46"/><circle cx="28.5" cy="25.5" r=".46"/><circle cx="29.5" cy="25.5" r=".46"/><circle cx="30.5" cy="25.5" r=".46"/><circle cx="33.5" cy="25.5" r=".46"/><circle cx="34.5" cy="25.5" r=".46"/><circle cx="35.5" cy="25.5" r=".46"/><circle cx="0.5" cy="26.5" r=".46"/><circle cx="2.5" cy="26.5" r=".46"/><circle cx="3.5" cy="26.5" r=".46"/><circle cx="4.5" cy="26.5" r=".46"/><circle cx="5.5" cy="26.5" r=".46"/><circle cx="6.5" cy="26.5" r=".46"/><circle cx="7.5" cy="26.5" r=".46"/><circle cx="9.5" cy="26.5" r=".46"/><circle cx="10.5" cy="26.5" r=".46"/><circle cx="13.5" cy="26.5" r=".46"/><circle cx="16.5" cy="26.5" r=".46"/><circle cx="18.5" cy="26.5" r=".46"/><circle cx="21.5" cy="26.5" r=".46"/><circle cx="25.5" cy="26.5" r=".46"/><circle cx="30.5" cy="26.5" r=".46"/><circle cx="31.5" cy="26.5" r=".46"/><circle cx="33.5" cy="26.5" r=".46"/><circle cx="34.5" cy="26.5" r=".46"/><circle cx="35.5" cy="26.5" r=".46"/><circle cx="36.5" cy="26.5" r=".46"/><circle cx="0.5" cy="27.5" r=".46"/><circle cx="4.5" cy="27.5" r=".46"/><circle cx="5.5" cy="27.5" r=".46"/><circle cx="7.5" cy="27.5" r=".46"/><circle cx="8.5" cy="27.5" r=".46"/><circle cx="9.5" cy="27.5" r=".46"/><circle cx="10.5" cy="27.5" r=".46"/><circle cx="12.5" cy="27.5" r=".46"/><circle cx="16.5" cy="27.5" r=".46"/><circle cx="19.5" cy="27.5" r=".46"/><circle cx="20.5" cy="27.5" r=".46"/><circle cx="21.5" cy="27.5" r=".46"/><circle cx="24.5" cy="27.5" r=".46"/><circle cx="27.5" cy="27.5" r=".46"/><circle cx="29.5" cy="27.5" r=".46"/><circle cx="32.5" cy="27.5" r=".46"/><circle cx="33.5" cy="27.5" r=".46"/><circle cx="35.5" cy="27.5" r=".46"/><circle cx="36.5" cy="27.5" r=".46"/><circle cx="0.5" cy="28.5" r=".46"/><circle cx="3.5" cy="28.5" r=".46"/><circle cx="6.5" cy="28.5" r=".46"/><circle cx="12.5" cy="28.5" r=".46"/><circle cx="13.5" cy="28.5" r=".46"/><circle cx="19.5" cy="28.5" r=".46"/><circle cx="20.5" cy="28.5" r=".46"/><circle cx="21.5" cy="28.5" r=".46"/><circle cx="22.5" cy="28.5" r=".46"/><circle cx="25.5" cy="28.5" r=".46"/><circle cx="26.5" cy="28.5" r=".46"/><circle cx="28.5" cy="28.5" r=".46"/><circle cx="29.5" cy="28.5" r=".46"/><circle cx="30.5" cy="28.5" r=".46"/><circle cx="31.5" cy="28.5" r=".46"/><circle cx="32.5" cy="28.5" r=".46"/><circle cx="33.5" cy="28.5" r=".46"/><circle cx="8.5" cy="29.5" r=".46"/><circle cx="11.5" cy="29.5" r=".46"/><circle cx="12.5" cy="29.5" r=".46"/><circle cx="17.5" cy="29.5" r=".46"/><circle cx="20.5" cy="29.5" r=".46"/><circle cx="21.5" cy="29.5" r=".46"/><circle cx="24.5" cy="29.5" r=".46"/><circle cx="28.5" cy="29.5" r=".46"/><circle cx="32.5" cy="29.5" r=".46"/><circle cx="33.5" cy="29.5" r=".46"/><circle cx="10.5" cy="30.5" r=".46"/><circle cx="11.5" cy="30.5" r=".46"/><circle cx="12.5" cy="30.5" r=".46"/><circle cx="19.5" cy="30.5" r=".46"/><circle cx="20.5" cy="30.5" r=".46"/><circle cx="23.5" cy="30.5" r=".46"/><circle cx="28.5" cy="30.5" r=".46"/><circle cx="30.5" cy="30.5" r=".46"/><circle cx="32.5" cy="30.5" r=".46"/><circle cx="33.5" cy="30.5" r=".46"/><circle cx="34.5" cy="30.5" r=".46"/><circle cx="36.5" cy="30.5" r=".46"/><circle cx="8.5" cy="31.5" r=".46"/><circle cx="9.5" cy="31.5" r=".46"/><circle cx="10.5" cy="31.5" r=".46"/><circle cx="11.5" cy="31.5" r=".46"/><circle cx="12.5" cy="31.5" r=".46"/><circle cx="13.5" cy="31.5" r=".46"/><circle cx="14.5" cy="31.5" r=".46"/><circle cx="16.5" cy="31.5" r=".46"/><circle cx="17.5" cy="31.5" r=".46"/><circle cx="18.5" cy="31.5" r=".46"/><circle cx="21.5" cy="31.5" r=".46"/><circle cx="22.5" cy="31.5" r=".46"/><circle cx="24.5" cy="31.5" r=".46"/><circle cx="26.5" cy="31.5" r=".46"/><circle cx="27.5" cy="31.5" r=".46"/><circle cx="28.5" cy="31.5" r=".46"/><circle cx="32.5" cy="31.5" r=".46"/><circle cx="33.5" cy="31.5" r=".46"/><circle cx="36.5" cy="31.5" r=".46"/><circle cx="10.5" cy="32.5" r=".46"/><circle cx="11.5" cy="32.5" r=".46"/><circle cx="13.5" cy="32.5" r=".46"/><circle cx="14.5" cy="32.5" r=".46"/><circle cx="15.5" cy="32.5" r=".46"/><circle cx="16.5" cy="32.5" r=".46"/><circle cx="17.5" cy="32.5" r=".46"/><circle cx="18.5" cy="32.5" r=".46"/><circle cx="20.5" cy="32.5" r=".46"/><circle cx="21.5" cy="32.5" r=".46"/><circle cx="22.5" cy="32.5" r=".46"/><circle cx="24.5" cy="32.5" r=".46"/><circle cx="25.5" cy="32.5" r=".46"/><circle cx="26.5" cy="32.5" r=".46"/><circle cx="27.5" cy="32.5" r=".46"/><circle cx="28.5" cy="32.5" r=".46"/><circle cx="29.5" cy="32.5" r=".46"/><circle cx="30.5" cy="32.5" r=".46"/><circle cx="31.5" cy="32.5" r=".46"/><circle cx="32.5" cy="32.5" r=".46"/><circle cx="34.5" cy="32.5" r=".46"/><circle cx="35.5" cy="32.5" r=".46"/><circle cx="36.5" cy="32.5" r=".46"/><circle cx="9.5" cy="33.5" r=".46"/><circle cx="10.5" cy="33.5" r=".46"/><circle cx="11.5" cy="33.5" r=".46"/><circle cx="12.5" cy="33.5" r=".46"/><circle cx="13.5" cy="33.5" r=".46"/><circle cx="15.5" cy="33.5" r=".46"/><circle cx="17.5" cy="33.5" r=".46"/><circle cx="18.5" cy="33.5" r=".46"/><circle cx="19.5" cy="33.5" r=".46"/><circle cx="25.5" cy="33.5" r=".46"/><circle cx="26.5" cy="33.5" r=".46"/><circle cx="27.5" cy="33.5" r=".46"/><circle cx="28.5" cy="33.5" r=".46"/><circle cx="30.5" cy="33.5" r=".46"/><circle cx="34.5" cy="33.5" r=".46"/><circle cx="35.5" cy="33.5" r=".46"/><circle cx="36.5" cy="33.5" r=".46"/><circle cx="9.5" cy="34.5" r=".46"/><circle cx="12.5" cy="34.5" r=".46"/><circle cx="15.5" cy="34.5" r=".46"/><circle cx="16.5" cy="34.5" r=".46"/><circle cx="17.5" cy="34.5" r=".46"/><circle cx="19.5" cy="34.5" r=".46"/><circle cx="20.5" cy="34.5" r=".46"/><circle cx="22.5" cy="34.5" r=".46"/><circle cx="23.5" cy="34.5" r=".46"/><circle cx="24.5" cy="34.5" r=".46"/><circle cx="25.5" cy="34.5" r=".46"/><circle cx="26.5" cy="34.5" r=".46"/><circle cx="27.5" cy="34.5" r=".46"/><circle cx="28.5" cy="34.5" r=".46"/><circle cx="29.5" cy="34.5" r=".46"/><circle cx="31.5" cy="34.5" r=".46"/><circle cx="36.5" cy="34.5" r=".46"/><circle cx="9.5" cy="35.5" r=".46"/><circle cx="10.5" cy="35.5" r=".46"/><circle cx="12.5" cy="35.5" r=".46"/><circle cx="13.5" cy="35.5" r=".46"/><circle cx="15.5" cy="35.5" r=".46"/><circle cx="17.5" cy="35.5" r=".46"/><circle cx="18.5" cy="35.5" r=".46"/><circle cx="23.5" cy="35.5" r=".46"/><circle cx="25.5" cy="35.5" r=".46"/><circle cx="28.5" cy="35.5" r=".46"/><circle cx="29.5" cy="35.5" r=".46"/><circle cx="30.5" cy="35.5" r=".46"/><circle cx="31.5" cy="35.5" r=".46"/><circle cx="33.5" cy="35.5" r=".46"/><circle cx="36.5" cy="35.5" r=".46"/><circle cx="10.5" cy="36.5" r=".46"/><circle cx="12.5" cy="36.5" r=".46"/><circle cx="14.5" cy="36.5" r=".46"/><circle cx="16.5" cy="36.5" r=".46"/><circle cx="17.5" cy="36.5" r=".46"/><circle cx="18.5" cy="36.5" r=".46"/><circle cx="19.5" cy="36.5" r=".46"/><circle cx="24.5" cy="36.5" r=".46"/><circle cx="25.5" cy="36.5" r=".46"/><circle cx="28.5" cy="36.5" r=".46"/><circle cx="30.5" cy="36.5" r=".46"/><circle cx="32.5" cy="36.5" r=".46"/><circle cx="33.5" cy="36.5" r=".46"/><circle cx="36.5" cy="36.5" r=".46"/></g><rect x="0.5" y="0.5" width="6" height="6" rx="1.8" fill="none" stroke="#0E1A44" stroke-width="1"/><rect x="2" y="2" width="3" height="3" rx=".9" fill="url(#sqeye)"/><rect x="30.5" y="0.5" width="6" height="6" rx="1.8" fill="none" stroke="#0E1A44" stroke-width="1"/><rect x="32" y="2" width="3" height="3" rx=".9" fill="url(#sqeye)"/><rect x="0.5" y="30.5" width="6" height="6" rx="1.8" fill="none" stroke="#0E1A44" stroke-width="1"/><rect x="2" y="32" width="3" height="3" rx=".9" fill="url(#sqeye)"/><circle cx="18.5" cy="18.5" r="4.9" fill="#FFF8E4"/><svg x="13.899999999999999" y="13.899999999999999" width="9.200000000000001" height="9.200000000000001" viewBox="0 0 200 200"><defs><linearGradient id="Qbo" x1=".3" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#8E1E3B"/><stop offset=".55" stop-color="#5E0F26"/><stop offset="1" stop-color="#26040F"/></linearGradient><linearGradient id="Qmv" x1="0" y1="0" x2=".5" y2="1"><stop offset="0" stop-color="#3A6BDA"/><stop offset=".55" stop-color="#193A96"/><stop offset="1" stop-color="#081640"/></linearGradient><linearGradient id="Qwl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".45" stop-color="#fff" stop-opacity=".95"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient><filter id="Qb4"><feGaussianBlur stdDeviation="4"/></filter><filter id="Qb1"><feGaussianBlur stdDeviation="1"/></filter><linearGradient id="Qsh" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".16"/><stop offset=".55" stop-color="#fff" stop-opacity="0"/></linearGradient></defs>
       <defs>
-        <linearGradient id="Lg" x1="0" y1="0" x2="0" y2="1">
+        <linearGradient id="Qg" x1="0" y1="0" x2="0" y2="1">
           <stop offset="0" stop-color="#FBEBB5"/><stop offset=".45" stop-color="#E2BD5C"/>
           <stop offset=".7" stop-color="#B48430"/><stop offset="1" stop-color="#F3D98A"/>
         </linearGradient>
-        <linearGradient id="Lring" x1="0" y1="0" x2="1" y2="1">
+        <linearGradient id="Qring" x1="0" y1="0" x2="1" y2="1">
           <stop offset="0" stop-color="#FFF2C4"/><stop offset=".35" stop-color="#C99A3A"/>
           <stop offset=".65" stop-color="#F1D27E"/><stop offset="1" stop-color="#7E5A1C"/>
         </linearGradient>
-        <clipPath id="Lc"><circle cx="100" cy="100" r="80"/></clipPath>
-        <linearGradient id="Lsh" x1="0" y1="0" x2="1" y2="0">
+        <clipPath id="Qc"><circle cx="100" cy="100" r="80"/></clipPath>
+        <linearGradient id="Qsh" x1="0" y1="0" x2="1" y2="0">
           <stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".35"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
         </linearGradient>
       </defs>
-      <circle cx="100" cy="100" r="96" fill="url(#Lring)"/>
+      <circle cx="100" cy="100" r="96" fill="url(#Qring)"/>
       <circle cx="100" cy="100" r="86" fill="#2a1a08"/>
-      <circle cx="100" cy="100" r="84" fill="url(#Lring)"/>
-      <g clip-path="url(#Lc)">
-        <rect width="200" height="200" fill="#1B3688"/>
-        <polygon points="0,0 200,0 0,200" fill="#6A1830"/>
-        <line x1="0" y1="200" x2="200" y2="0" stroke="#E2BD5C" stroke-width="1.2" opacity=".6"/>
+      <circle cx="100" cy="100" r="84" fill="url(#Qring)"/>
+      <g clip-path="url(#Qc)">
+        <rect width="200" height="200" fill="url(#Qbo)"/>
+        <polygon points="0,0 163.5,0 36.5,200 0,200" fill="url(#Qmv)"/>
+        <line x1="36.5" y1="200" x2="163.5" y2="0" stroke="url(#Qwl)" stroke-width="16" opacity=".45" filter="url(#Qb4)"/><line x1="28.5" y1="200" x2="155.5" y2="0" stroke="url(#Qwl)" stroke-width=".8" opacity=".55"/><line x1="44.5" y1="200" x2="171.5" y2="0" stroke="url(#Qwl)" stroke-width=".8" opacity=".55"/><line x1="18.5" y1="200" x2="145.5" y2="0" stroke="url(#Qwl)" stroke-width=".6" opacity=".3" filter="url(#Qb1)"/><line x1="54.5" y1="200" x2="181.5" y2="0" stroke="url(#Qwl)" stroke-width=".6" opacity=".3" filter="url(#Qb1)"/><line x1="36.5" y1="200" x2="163.5" y2="0" stroke="#F6D98A" stroke-width="1.3" opacity=".95"/><rect width="200" height="200" fill="url(#Qsh)"/>
         
       </g>
-      <text x="100" y="118" text-anchor="middle" font-family="Cinzel, Georgia, serif" font-weight="700" font-size="62" fill="url(#Lg)" stroke="#6B4A14" stroke-width=".8" letter-spacing="-3">KD</text>
+      <text x="100" y="118" text-anchor="middle" style="font-family:'Noto Sans JP','Noto Sans CJK JP',sans-serif;font-weight:500;font-size:60px;letter-spacing:-1px" fill="url(#Qg)" stroke="#6B4A14" stroke-width=".5">KD</text>
       <line x1="72" y1="134" x2="93" y2="134" stroke="#E2BD5C" stroke-width="1.4"/>
       <line x1="107" y1="134" x2="128" y2="134" stroke="#E2BD5C" stroke-width="1.4"/>
       <rect x="97" y="131" width="6" height="6" transform="rotate(45 100 134)" fill="#FBEBB5"/>
     </svg></svg></div>
-        <p class="hint">Yanındakine telefonundan okut</p>
-        <p class="url" lang="en">kdkanallari.github.io</p>
+        <p class="hint">Let a friend scan it</p>
+        <p class="url">kdchannels.github.io</p>
         <div class="btns">
-          <button type="button" class="btn line" id="copy"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 1H4a2 2 0 0 0-2 2v14h2V3h12V1zm3 4H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zm0 16H8V7h11v14z"/></svg><span>Kopyala</span></button>
-          <a class="btn gold" href="https://wa.me/?text=T%C3%BCm%20kanallar%C4%B1m%20tek%20sayfada%2C%20dokunup%20takip%20edebilirsin%20%F0%9F%91%87%20https%3A%2F%2Fkdkanallari.github.io" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2s.2-1.1.2-1.2-.2-.2-.5-.3z"/></svg><span>WhatsApp</span></a>
+          <button type="button" class="btn line" id="copy"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 1H4a2 2 0 0 0-2 2v14h2V3h12V1zm3 4H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zm0 16H8V7h11v14z"/></svg><span>Copy link</span></button>
+          <a class="btn gold" href="https://wa.me/?text=KD%20%C2%B7%20Official%20Channels%20%E2%9C%A8%20https%3A%2F%2Fkdchannels.github.io" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2s.2-1.1.2-1.2-.2-.2-.5-.3z"/></svg><span>WhatsApp</span></a>
         </div>
       </div>
     </details>
   </div>
   <footer>KD</footer>
 </main>
-
 <script>
-(function(){var b=document.getElementById('copy');if(!b)return;var s=b.querySelector('span');var u='https://kdkanallari.github.io';
-function done(ok){s.textContent=ok?'Kopyalandı ✓':'Olmadı';setTimeout(function(){s.textContent='Kopyala'},2000)}
+(function(){var b=document.getElementById('copy');if(!b)return;var s=b.querySelector('span');var u='https://kdchannels.github.io';
+function done(ok){s.textContent=ok?'Copied ✓':'Try again';setTimeout(function(){s.textContent='Copy link'},2000)}
 b.addEventListener('click',function(){
  if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(u).then(function(){done(true)},fallback)}else fallback();
  function fallback(){try{var t=document.createElement('textarea');t.value=u;t.setAttribute('readonly','');t.style.position='fixed';t.style.opacity='0';document.body.appendChild(t);t.select();var ok=document.execCommand('copy');document.body.removeChild(t);done(ok)}catch(e){done(false)}}
